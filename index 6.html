@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Clínica Fornieles · Dentistas en el centro de Almería</title>
+<meta name="description" content="Clínica dental Fornieles, en la calle Ricardos 9, junto al Paseo de Almería. Dra. Ana María Fornieles Rubio y Dr. Francisco Fernández Valverde. Pide cita: 950 230 108.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Public+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Dentist","name":"Clínica Fornieles","telephone":"+34950230108","address":{"@type":"PostalAddress","streetAddress":"Calle Ricardos, 9, bajo","postalCode":"04001","addressLocality":"Almería","addressCountry":"ES"}}
+</script>
+<style>
+:root{
+  --bg:#F5F8F6; --paper:#FFFFFF; --ink:#16231E; --soft:#4A5B54; --line:#D3DFD8;
+  --green:#1E4D3E; --green-2:#2D6A55; --sage:#E2ECE6; --sun:#E7B43A; --sun-ink:#3A2A00;
+  --on-green:#F5F8F6;
+  color-scheme:light;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+@media (prefers-color-scheme:dark){
+  :root:not([data-theme="light"]){
+    --bg:#0F1A16; --paper:#16241F; --ink:#E8F0EB; --soft:#A8BBB2; --line:#2A3D35;
+    --green:#7CC3A6; --green-2:#9BD6BD; --sage:#1C3029; --sun:#EFC260; --sun-ink:#2A1E00;
+    --on-green:#0F1A16; color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0F1A16; --paper:#16241F; --ink:#E8F0EB; --soft:#A8BBB2; --line:#2A3D35;
+  --green:#7CC3A6; --green-2:#9BD6BD; --sage:#1C3029; --sun:#EFC260; --sun-ink:#2A1E00;
+  --on-green:#0F1A16; color-scheme:dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:calc(env(safe-area-inset-top,0px) + 72px)}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important;animation:none!important}}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.6 "Public Sans",system-ui,-apple-system,"Segoe UI",sans-serif;-webkit-font-smoothing:antialiased}
+h1,h2,h3{font-family:"Bricolage Grotesque","Public Sans",system-ui,sans-serif;line-height:1.08;margin:0;letter-spacing:-.01em}
+a{color:inherit}
+button{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--sun);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1120px;margin:0 auto;padding:0 22px}
+
+/* cabecera */
+header.top{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--bg);border-bottom:1px solid var(--line)}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:21;background:var(--bg)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:64px;gap:16px}
+.mark{display:flex;align-items:baseline;gap:10px;text-decoration:none}
+.mark b{font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.45rem;color:var(--green);letter-spacing:-.02em}
+.mark span{font-size:.9rem;color:var(--soft)}
+.top nav{display:flex;gap:22px;align-items:center}
+.top nav a.l{text-decoration:none;color:var(--soft);font-size:.95rem}
+.top nav a.l:hover{color:var(--ink)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:48px;padding:0 20px;border-radius:999px;border:0;cursor:pointer;text-decoration:none;font-weight:700;font-size:1rem}
+.btn.call{background:var(--green);color:var(--on-green)}
+.btn.call:hover{background:var(--green-2)}
+.btn.ghost{background:transparent;border:2px solid var(--green);color:var(--green)}
+.btn.sm{min-height:40px;padding:0 16px;font-size:.95rem}
+.btn.wa{background:#25D366;color:#0B2E1A}
+.btn.wa:hover{background:#3BE07A}
+@media (max-width:760px){.top nav a.l{display:none}.mark span{display:none}}
+
+/* portada */
+.hero{padding:56px 0 36px}
+.hero h1{font-size:clamp(2.3rem,6.4vw,4.6rem);font-weight:800;max-width:15ch;color:var(--ink)}
+.hero p.lead{font-size:clamp(1.1rem,2vw,1.3rem);color:var(--soft);max-width:44ch;margin:22px 0 28px}
+.hero .who{display:flex;flex-wrap:wrap;gap:10px 26px;margin-top:36px;padding-top:22px;border-top:1px solid var(--line);color:var(--soft);font-size:.98rem}
+.hero .who strong{color:var(--ink);font-weight:700}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+
+/* planificador */
+.planner{background:var(--paper);border:1px solid var(--line);border-radius:28px;padding:28px;margin:8px 0 72px}
+.planner h2{font-size:clamp(1.6rem,3.4vw,2.3rem);font-weight:700}
+.planner .intro{color:var(--soft);margin:10px 0 24px;max-width:56ch}
+.pgrid{display:grid;grid-template-columns:260px 1fr;gap:32px}
+.tlist{display:flex;flex-direction:column;gap:6px}
+.tbtn{display:flex;justify-content:space-between;align-items:center;gap:10px;text-align:left;padding:12px 16px;border-radius:14px;border:1px solid transparent;background:transparent;cursor:pointer;font-size:1rem;color:var(--ink)}
+.tbtn small{color:var(--soft);font-size:.85rem;white-space:nowrap}
+.tbtn:hover{background:var(--sage)}
+.tbtn[aria-pressed="true"]{background:var(--green);color:var(--on-green)}
+.tbtn[aria-pressed="true"] small{color:var(--on-green);opacity:.85}
+@media (max-width:860px){
+  .pgrid{grid-template-columns:1fr;gap:20px}
+  .tlist{flex-direction:row;overflow-x:auto;padding-bottom:6px;margin:0 -28px;padding-left:28px;padding-right:28px;scrollbar-width:none}
+  .tlist::-webkit-scrollbar{display:none}
+  .tbtn{flex:0 0 auto;border-color:var(--line);border-radius:999px;padding:10px 16px}
+  .tbtn small{display:none}
+  .planner{padding:24px 20px;border-radius:22px}
+}
+.summary{display:flex;flex-wrap:wrap;gap:10px 28px;align-items:baseline;margin-bottom:18px}
+.summary h3{font-size:1.6rem;font-weight:700;width:100%}
+.summary .fact{font-size:.98rem;color:var(--soft)}
+.summary .fact b{color:var(--ink);font-size:1.15rem;font-family:"Bricolage Grotesque",sans-serif}
+
+/* regla de tiempo: el elemento memorable */
+.ruler{position:relative;height:74px;margin:6px 8px 26px}
+.ruler .base{position:absolute;left:0;right:0;top:30px;height:6px;border-radius:6px;background:var(--sage)}
+.ruler .fill{position:absolute;left:0;top:30px;height:6px;border-radius:6px;background:var(--green);width:0;transition:width .6s ease}
+.ruler .dot{position:absolute;top:18px;width:30px;height:30px;margin-left:-15px;border-radius:50%;background:var(--sun);color:var(--sun-ink);font-weight:700;font-size:.9rem;display:grid;place-items:center;border:3px solid var(--paper);transition:left .6s ease}
+.ruler .tick{position:absolute;top:56px;font-size:.8rem;color:var(--soft);transform:translateX(-50%);white-space:nowrap}
+.ruler .tick.first{transform:none}
+.ruler .tick.last{transform:translateX(-100%)}
+.ruler.single .base,.ruler.single .fill{display:none}
+
+.visits{list-style:none;margin:0;padding:0;counter-reset:v}
+.visit{display:grid;grid-template-columns:44px 1fr;gap:4px 14px;padding:16px 0;border-top:1px solid var(--line)}
+.visit .n{grid-row:span 3;width:36px;height:36px;border-radius:50%;background:var(--sun);color:var(--sun-ink);display:grid;place-items:center;font-weight:700}
+.visit h4{margin:0;font-size:1.1rem;font-family:"Bricolage Grotesque",sans-serif;font-weight:700;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline}
+.visit h4 span{font-family:"Public Sans",sans-serif;font-weight:400;font-size:.92rem;color:var(--soft)}
+.visit p{margin:0;max-width:62ch}
+.visit .feel{color:var(--soft);font-size:.95rem}
+.gap{padding:6px 0 6px 58px;color:var(--green);font-size:.92rem;font-style:italic}
+.after{margin-top:6px;padding:16px 18px;border-radius:16px;background:var(--sage);font-size:.98rem}
+.after b{display:block;margin-bottom:2px}
+.disclaimer{font-size:.85rem;color:var(--soft);margin-top:12px}
+
+/* cuándo puedes venir */
+.when{margin-top:28px;padding-top:24px;border-top:2px dashed var(--line)}
+.when h3{font-size:1.25rem;font-weight:700;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:12px}
+.chip{border:1.5px solid var(--line);background:var(--paper);border-radius:999px;padding:8px 15px;cursor:pointer;font-size:.95rem;min-height:40px}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);border-color:var(--ink)}
+.script{margin:16px 0 14px;padding:18px 20px;border-left:4px solid var(--sun);background:var(--bg);border-radius:0 14px 14px 0;font-size:1.05rem}
+.script small{display:block;color:var(--soft);font-size:.85rem;margin-bottom:4px}
+
+/* secciones */
+section.s{padding:20px 0 72px}
+section.s > .wrap > h2{font-size:clamp(1.7rem,3.6vw,2.6rem);font-weight:700;max-width:22ch}
+section.s .sub{color:var(--soft);max-width:58ch;margin:12px 0 28px}
+
+/* familia */
+.fam{display:grid;grid-template-columns:1fr 1fr;gap:28px;align-items:start}
+@media (max-width:860px){.fam{grid-template-columns:1fr}}
+.famform{background:var(--paper);border:1px solid var(--line);border-radius:22px;padding:22px}
+.famform label{display:block;font-weight:700;font-size:.95rem;margin:14px 0 6px}
+.famform label:first-child{margin-top:0}
+.famform input,.famform select{width:100%;min-height:46px;border-radius:12px;border:1.5px solid var(--line);background:var(--bg);color:var(--ink);padding:0 12px;font:inherit}
+.famform .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+.famform .btn{margin-top:18px;width:100%}
+@media (max-width:480px){.famform .row{grid-template-columns:1fr;gap:0}}
+.people{list-style:none;margin:0;padding:0}
+.person{display:flex;justify-content:space-between;gap:12px;align-items:center;padding:14px 0;border-bottom:1px solid var(--line)}
+.person .nm{font-weight:700}
+.person .st{font-size:.92rem;color:var(--soft)}
+.badge{display:inline-block;padding:2px 10px;border-radius:999px;font-size:.82rem;font-weight:700;margin-left:6px}
+.badge.due{background:var(--sun);color:var(--sun-ink)}
+.badge.ok{background:var(--sage);color:var(--green)}
+.rm{border:0;background:transparent;color:var(--soft);cursor:pointer;font-size:1.3rem;line-height:1;padding:6px 8px;border-radius:8px}
+.rm:hover{color:var(--ink);background:var(--sage)}
+.empty{color:var(--soft);padding:18px 0}
+
+/* doctores */
+.docs{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+@media (max-width:700px){.docs{grid-template-columns:1fr}}
+.doc{display:flex;gap:18px;align-items:center;padding:22px;border-radius:22px;background:var(--paper);border:1px solid var(--line)}
+.mono{flex:0 0 76px;height:76px;border-radius:50%;background:var(--green);color:var(--on-green);display:grid;place-items:center;font-family:"Bricolage Grotesque",sans-serif;font-weight:800;font-size:1.6rem}
+.doc h3{font-size:1.25rem;font-weight:700}
+.doc p{margin:4px 0 0;color:var(--soft);font-size:.95rem}
+
+/* visita */
+.visit-box{display:grid;grid-template-columns:1.1fr .9fr;gap:28px}
+@media (max-width:860px){.visit-box{grid-template-columns:1fr}}
+.addr{background:var(--green);color:var(--on-green);border-radius:26px;padding:30px}
+.addr h3{font-size:clamp(1.6rem,3.4vw,2.2rem);font-weight:800}
+.addr p{margin:10px 0 0;opacity:.92}
+.addr .cta-row{margin-top:24px}
+.addr .btn.call{background:var(--sun);color:var(--sun-ink)}
+.addr .btn.ghost{border-color:var(--on-green);color:var(--on-green)}
+.facts{list-style:none;margin:0;padding:0}
+.facts li{padding:16px 0;border-bottom:1px solid var(--line)}
+.facts li b{display:block}
+.facts li span{color:var(--soft);font-size:.96rem}
+
+footer{padding:28px 0 110px;border-top:1px solid var(--line);color:var(--soft);font-size:.9rem}
+footer .wrap{display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px}
+
+/* barra móvil */
+.mbar{display:none}
+@media (max-width:760px){
+  .mbar{display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;position:fixed;left:0;right:0;bottom:0;z-index:30;padding:10px 14px calc(10px + env(safe-area-inset-bottom,0px));background:var(--bg);border-top:1px solid var(--line)}
+  .mbar .btn{min-height:50px;padding:0 8px;font-size:.95rem}
+}
+.toast{position:fixed;left:50%;bottom:calc(84px + env(safe-area-inset-bottom,0px));transform:translate(-50%,20px);opacity:0;background:var(--ink);color:var(--bg);padding:10px 18px;border-radius:999px;font-size:.95rem;transition:.25s;pointer-events:none;z-index:40}
+.toast.on{opacity:1;transform:translate(-50%,0)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="mark" href="#inicio" aria-label="Clínica Fornieles, inicio"><b>Fornieles</b><span>Clínica dental · Almería</span></a>
+    <nav aria-label="Secciones">
+      <a class="l" href="#tratamiento">Tu tratamiento</a>
+      <a class="l" href="#familia">Revisiones</a>
+      <a class="l" href="#visitanos">Cómo llegar</a>
+      <a class="btn call sm" href="tel:+34950230108">950 230 108</a>
+    </nav>
+  </div>
+</header>
+
+<main id="inicio">
+  <div class="wrap">
+    <section class="hero">
+      <h1>Antes de sentarte, ya sabrás cuántas visitas te esperan.</h1>
+      <p class="lead">Elige tu tratamiento y mira qué pasa en cada cita, cuánto dura y cuánto tiempo hay entre una y otra. Sin letra pequeña y sin sorpresas.</p>
+      <div class="cta-row">
+        <a class="btn call" href="tel:+34950230108">Llamar al 950 230 108</a>
+        <a class="btn wa" href="https://wa.me/34950230108?text=Hola%2C%20quer%C3%ADa%20pedir%20cita." target="_blank" rel="noopener">Escribir por WhatsApp</a>
+        <a class="btn ghost" href="#tratamiento">Ver mi tratamiento</a>
+      </div>
+      <div class="who">
+        <span><strong>Dra. Ana María Fornieles Rubio</strong></span>
+        <span><strong>Dr. Francisco Fernández Valverde</strong></span>
+        <span>Calle Ricardos, 9 · junto al Paseo de Almería</span>
+      </div>
+    </section>
+
+    <!-- PLANIFICADOR -->
+    <section class="planner" id="tratamiento" aria-labelledby="pl-t">
+      <h2 id="pl-t">Tu tratamiento, visita a visita</h2>
+      <p class="intro">Toca un tratamiento. Verás las citas sobre una línea de tiempo y lo que se hace en cada una.</p>
+      <div class="pgrid">
+        <div class="tlist" id="tlist" role="group" aria-label="Tratamientos"></div>
+        <div aria-live="polite">
+          <div class="summary" id="summary"></div>
+          <div class="ruler" id="ruler" aria-hidden="true"></div>
+          <ol class="visits" id="visits"></ol>
+          <div class="after" id="after"></div>
+          <p class="disclaimer">Plazos orientativos. En la primera visita el doctor revisa tu caso y te confirma el plan exacto.</p>
+
+          <div class="when">
+            <h3>¿Cuándo te viene bien venir?</h3>
+            <div class="chips" id="days" role="group" aria-label="Días"></div>
+            <div class="chips" id="slots" role="group" aria-label="Franja"></div>
+            <div class="script" id="script"></div>
+            <div class="cta-row">
+              <a class="btn wa" id="wa" href="https://wa.me/34950230108" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+              <a class="btn ghost" href="tel:+34950230108">Prefiero llamar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <!-- FAMILIA -->
+  <section class="s" id="familia" aria-labelledby="fam-t">
+    <div class="wrap">
+      <h2 id="fam-t">¿A quién de casa le toca revisión?</h2>
+      <p class="sub">Apunta a tu familia y te decimos quién va con retraso. Así pides cita para todos en una sola llamada, y si puede ser, la misma tarde.</p>
+      <div class="fam">
+        <form class="famform" id="famform" novalidate>
+          <label for="fn">Nombre</label>
+          <input id="fn" placeholder="Por ejemplo, Lucía" autocomplete="off" maxlength="30">
+          <div class="row">
+            <div>
+              <label for="fk">Quién es</label>
+              <select id="fk">
+                <option value="kid">Niño o niña</option>
+                <option value="adult" selected>Adulto</option>
+                <option value="care">Con prótesis o encías delicadas</option>
+              </select>
+            </div>
+            <div>
+              <label for="fl">Última revisión</label>
+              <select id="fl">
+                <option value="2">Hace 1 o 2 meses</option>
+                <option value="5">Hace unos 5 meses</option>
+                <option value="9" selected>Hace unos 9 meses</option>
+                <option value="14">Hace más de un año</option>
+                <option value="30">Hace más de 2 años</option>
+                <option value="99">No me acuerdo</option>
+              </select>
+            </div>
+          </div>
+          <button class="btn call" type="submit">Añadir a la lista</button>
+        </form>
+        <div>
+          <ul class="people" id="people"></ul>
+          <div class="script" id="famscript" hidden></div>
+          <div class="cta-row" id="famcta" hidden>
+            <a class="btn wa" id="famwa" href="https://wa.me/34950230108" target="_blank" rel="noopener">Enviar por WhatsApp</a>
+            <a class="btn ghost" href="tel:+34950230108">Prefiero llamar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOCTORES -->
+  <section class="s" aria-labelledby="doc-t">
+    <div class="wrap">
+      <h2 id="doc-t">Te atienden siempre los mismos</h2>
+      <p class="sub">En Fornieles no cambias de dentista en cada cita. Quien empieza tu tratamiento es quien lo termina, y conoce tu boca de la última vez.</p>
+      <div class="docs">
+        <article class="doc">
+          <div class="mono" aria-hidden="true">AF</div>
+          <div><h3>Dra. Ana María Fornieles Rubio</h3><p>Odontología y estomatología</p></div>
+        </article>
+        <article class="doc">
+          <div class="mono" aria-hidden="true">FF</div>
+          <div><h3>Dr. Francisco Fernández Valverde</h3><p>Odontología y estomatología</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISÍTANOS -->
+  <section class="s" id="visitanos" aria-labelledby="vis-t">
+    <div class="wrap">
+      <div class="visit-box">
+        <div class="addr">
+          <h3 id="vis-t">Calle Ricardos, 9, bajo</h3>
+          <p>04001 Almería. En pleno centro, a unos pasos del Paseo de Almería.</p>
+          <div class="cta-row">
+            <a class="btn call" href="tel:+34950230108">Llamar al 950 230 108</a>
+            <a class="btn wa" href="https://wa.me/34950230108?text=Hola%2C%20quer%C3%ADa%20pedir%20cita." target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Calle+Ricardos+9+04001+Almer%C3%ADa" target="_blank" rel="noopener">Abrir en Google Maps</a>
+          </div>
+        </div>
+        <ul class="facts">
+          <li><b>En planta baja</b><span>Entras directamente desde la calle.</span></li>
+          <li><b>Seguro dental Cajamar</b><span>Somos clínica concertada. Dínoslo al pedir cita.</span></li>
+          <li><b>¿Te duele ahora?</b><span>Llama o escríbenos por WhatsApp contando qué notas. Te decimos cuándo puedes venir.</span></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Clínica Fornieles · Calle Ricardos, 9, bajo · 04001 Almería</span>
+    <a href="tel:+34950230108">950 230 108</a>
+  </div>
+</footer>
+
+<div class="mbar">
+  <a class="btn call" href="tel:+34950230108">Llamar</a>
+  <a class="btn wa" href="https://wa.me/34950230108?text=Hola%2C%20quer%C3%ADa%20pedir%20cita." target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn ghost" href="https://www.google.com/maps/search/?api=1&query=Calle+Ricardos+9+04001+Almer%C3%ADa" target="_blank" rel="noopener">Cómo llegar</a>
+</div>
+<div class="toast" id="toast" role="status"></div>
+
+<script>
+const T = [
+  {id:"limpieza", name:"Revisión y limpieza", short:"1 cita",
+   visits:[{d:0,t:"Revisión y limpieza",m:"30–45 min",w:"Miramos dientes y encías, quitamos el sarro y te decimos si hace falta algo más.",f:"No necesita anestesia. Puedes notar algo de sensibilidad un rato."}],
+   after:"Repite cada 6 a 12 meses. Si te sangran las encías al cepillarte, no esperes tanto."},
+  {id:"empaste", name:"Empaste", short:"1 cita",
+   visits:[{d:0,t:"Limpiar la caries y empastar",m:"30–45 min",w:"Quitamos la parte dañada del diente y la rellenamos con material del color del diente.",f:"Con anestesia local. Puedes comer cuando se pase el hormigueo."}],
+   after:"Es normal notar el diente algo sensible al frío unos días."},
+  {id:"endodoncia", name:"Endodoncia", short:"1–2 citas",
+   visits:[{d:0,t:"Endodoncia",m:"60–90 min",w:"Limpiamos el nervio dañado por dentro del diente y lo sellamos. Así salvas el diente en vez de sacarlo.",f:"Con anestesia local. Durante el tratamiento no debería dolerte."},
+           {d:14,t:"Reconstrucción o funda",m:"30–60 min",w:"Reforzamos el diente, que tras la endodoncia queda más frágil.",f:"Según cuánto diente quede, basta con reconstruirlo o hace falta una funda."}],
+   after:"Los primeros días puedes notar molestia al morder. Mastica por el otro lado hasta la siguiente cita."},
+  {id:"corona", name:"Funda o corona", short:"3 citas",
+   visits:[{d:0,t:"Preparar el diente y tomar medidas",m:"60 min",w:"Damos forma al diente y tomamos las medidas. Te vas con una funda provisional.",f:"Con anestesia local."},
+           {d:10,t:"Prueba",m:"20–30 min",w:"Comprobamos el ajuste y el color antes de terminarla.",f:"Sin anestesia, normalmente."},
+           {d:18,t:"Colocación definitiva",m:"30 min",w:"Fijamos la funda y ajustamos tu mordida.",f:"Te vas con el diente terminado."}],
+   after:"Con la provisional, evita chicles y comida muy dura."},
+  {id:"implante", name:"Implante dental", short:"5 citas",
+   visits:[{d:0,t:"Estudio",m:"30–45 min",w:"Revisamos la zona con radiografías para ver si hay hueso suficiente y te damos el plan y el presupuesto por escrito.",f:"Solo exploración, sin pinchazos."},
+           {d:14,t:"Colocación del implante",m:"60–90 min",w:"Colocamos el implante, una pequeña raíz de titanio, en el hueso.",f:"Con anestesia local. Después, molestias leves unos días."},
+           {d:24,t:"Revisión y puntos",m:"15 min",w:"Vemos cómo cicatriza y quitamos los puntos.",f:"Rápido y sin anestesia."},
+           {d:110,t:"Medidas del diente",m:"30 min",w:"El implante ya se ha unido al hueso. Tomamos medidas para el diente definitivo.",f:"Sin anestesia."},
+           {d:125,t:"Colocación del diente",m:"45 min",w:"Fijamos la corona sobre el implante y ajustamos la mordida.",f:"Sales con el diente terminado."}],
+   gaps:{3:"Unos 3 meses para que el implante se una al hueso"},
+   after:"En algunos casos se puede poner un diente provisional el mismo día. Lo vemos en el estudio."},
+  {id:"extraccion", name:"Extracción", short:"2 citas",
+   visits:[{d:0,t:"Extracción",m:"30–45 min",w:"Sacamos el diente con cuidado y te damos las instrucciones para los días siguientes.",f:"Con anestesia local."},
+           {d:7,t:"Revisión",m:"15 min",w:"Comprobamos que la zona cicatriza bien.",f:"Sin anestesia."}],
+   after:"Las primeras 24 horas: nada de enjuagues fuertes, ni fumar, ni comida caliente. Si quieres reponer el hueco, pregúntanos."},
+  {id:"blanqueamiento", name:"Blanqueamiento", short:"3 citas",
+   visits:[{d:0,t:"Limpieza y valoración",m:"45 min",w:"Limpiamos y comprobamos que no hay caries ni encías inflamadas. Anotamos tu color de partida.",f:"Sin anestesia."},
+           {d:7,t:"Sesión de blanqueamiento",m:"60–90 min",w:"Aplicamos el gel protegiendo tus encías.",f:"Puedes notar sensibilidad uno o dos días."},
+           {d:21,t:"Revisión del color",m:"15 min",w:"Comparamos con el color de partida.",f:"Sin anestesia."}],
+   after:"Los primeros días evita café, té, vino tinto y tabaco."},
+  {id:"ferula", name:"Férula de descarga", short:"3 citas",
+   visits:[{d:0,t:"Medidas",m:"20 min",w:"Tomamos las medidas de tu boca para hacer la férula a medida.",f:"Sin anestesia."},
+           {d:10,t:"Entrega y ajuste",m:"30 min",w:"Te la probamos, la ajustamos y te explicamos cómo usarla y limpiarla.",f:"Sin anestesia."},
+           {d:40,t:"Revisión",m:"15 min",w:"Vemos si has notado mejora y retocamos lo que haga falta.",f:"Sin anestesia."}],
+   after:"Indicada si aprietas o rechinas los dientes, sobre todo de noche."},
+  {id:"protesis", name:"Dentadura postiza", short:"5 citas",
+   visits:[{d:0,t:"Valoración y primeras medidas",m:"45 min",w:"Vemos tu boca y tomamos las primeras impresiones.",f:"Sin anestesia."},
+           {d:7,t:"Medidas definitivas",m:"30 min",w:"Tomamos medidas más precisas y registramos tu mordida.",f:"Sin anestesia."},
+           {d:14,t:"Prueba de dientes",m:"30 min",w:"Te pruebas la dentadura antes de terminarla y eliges forma y color.",f:"Puedes opinar y cambiar lo que no te guste."},
+           {d:24,t:"Entrega",m:"30 min",w:"Te la colocamos y te enseñamos a ponerla, quitarla y limpiarla.",f:"Los primeros días es normal que roce un poco."},
+           {d:31,t:"Ajuste",m:"20 min",w:"Retocamos las zonas que te molesten.",f:"Si roza antes, llama y te vemos."}],
+   after:"Hace falta un tiempo para acostumbrarse a hablar y comer con ella. Las revisiones son parte del tratamiento."}
+];
+const DAYS=["Lunes","Martes","Miércoles","Jueves","Viernes"];
+const SLOTS=["Por la mañana","Por la tarde","Me da igual"];
+let cur=T[0], days=new Set(), slot="Me da igual";
+
+const $=s=>document.querySelector(s);
+const toast=msg=>{const t=$("#toast");t.textContent=msg;t.classList.add("on");clearTimeout(toast._t);toast._t=setTimeout(()=>t.classList.remove("on"),1800)};
+function spanText(d){
+  if(d===0) return "Todo en una cita";
+  if(d<=10) return d+" días";
+  if(d<60) return "Unas "+Math.round(d/7)+" semanas";
+  return "Unos "+Math.round(d/30)+" meses";
+}
+function tickText(d){ if(d===0) return "Hoy"; if(d<60) return "Semana "+(Math.floor(d/7)+1); return "Mes "+(Math.floor(d/30)+1); }
+
+function renderList(){
+  const box=$("#tlist"); box.innerHTML="";
+  T.forEach(t=>{
+    const b=document.createElement("button");
+    b.type="button"; b.className="tbtn"; b.setAttribute("aria-pressed",t===cur);
+    b.innerHTML=`<span>${t.name}</span><small>${t.short}</small>`;
+    b.onclick=()=>{cur=t;renderList();renderPlan();renderScript();
+      try{history.replaceState(null,"","#"+t.id)}catch(e){}};
+    box.appendChild(b);
+  });
+}
+function renderPlan(){
+  const v=cur.visits, last=v[v.length-1].d;
+  $("#summary").innerHTML=`<h3>${cur.name}</h3>
+    <span class="fact"><b>${v.length}</b> ${v.length===1?"cita":"citas"}</span>
+    <span class="fact"><b>${spanText(last)}</b>${last?" de principio a fin":""}</span>`;
+  const r=$("#ruler"); r.className="ruler"+(v.length===1?" single":""); r.innerHTML='<div class="base"></div><div class="fill"></div>';
+  v.forEach((x,i)=>{
+    const p=last?(x.d/last*100):50;
+    const dot=document.createElement("div"); dot.className="dot"; dot.textContent=i+1; dot.style.left=p+"%"; r.appendChild(dot);
+    if(i===0||i===v.length-1||v.length<=3){
+      const tk=document.createElement("div"); tk.className="tick"+(i===0&&last?" first":"")+(i===v.length-1&&last?" last":"");
+      tk.textContent=tickText(x.d); tk.style.left=p+"%"; r.appendChild(tk);
+    }
+  });
+  requestAnimationFrame(()=>{const f=r.querySelector(".fill"); if(f) f.style.width="100%"});
+  const ol=$("#visits"); ol.innerHTML="";
+  v.forEach((x,i)=>{
+    if(i>0){
+      const g=document.createElement("li"); g.className="gap";
+      const diff=x.d-v[i-1].d;
+      g.textContent=(cur.gaps&&cur.gaps[i])?cur.gaps[i]:(diff<=10?diff+" días después":"Unas "+Math.round(diff/7)+" semanas después");
+      ol.appendChild(g);
+    }
+    const li=document.createElement("li"); li.className="visit";
+    li.innerHTML=`<div class="n">${i+1}</div><h4>${x.t}<span>${x.m}</span></h4><p>${x.w}</p><p class="feel">${x.f}</p>`;
+    ol.appendChild(li);
+  });
+  $("#after").innerHTML=`<b>Y después</b>${cur.after}`;
+}
+function chip(box,label,pressed,fn){
+  const c=document.createElement("button"); c.type="button"; c.className="chip"; c.textContent=label;
+  c.setAttribute("aria-pressed",pressed); c.onclick=()=>fn(c); box.appendChild(c);
+}
+function renderChips(){
+  const d=$("#days"), s=$("#slots"); d.innerHTML=""; s.innerHTML="";
+  DAYS.forEach(x=>chip(d,x,days.has(x),c=>{days.has(x)?days.delete(x):days.add(x);c.setAttribute("aria-pressed",days.has(x));renderScript()}));
+  SLOTS.forEach(x=>chip(s,x,slot===x,()=>{slot=x;renderChips();renderScript()}));
+}
+function joinEs(a){return a.length<2?a.join(""):a.slice(0,-1).join(", ")+" o "+a[a.length-1]}
+function msg(){
+  const n=cur.visits.length;
+  let m=`Hola, quería pedir cita para ${n===1?"un":"empezar un"} ${cur.name.toLowerCase()}`;
+  m=m.replace("para un revisión","para una revisión").replace("empezar un revisión","una revisión").replace("un endodoncia","una endodoncia").replace("un extracción","una extracción").replace("un férula","una férula").replace("un funda","una funda").replace("un dentadura","una dentadura");
+  const ds=DAYS.filter(x=>days.has(x)).map(x=>x.toLowerCase());
+  const sl=slot==="Me da igual"?"":slot.toLowerCase();
+  if(ds.length||sl){ m+=". Me viene mejor "+(ds.length?"el "+joinEs(ds):"")+(ds.length&&sl?" ":"")+sl; }
+  return m+".";
+}
+const WA="https://wa.me/34950230108?text=";
+function renderScript(){ $("#script").innerHTML=`<small>Tu mensaje, listo para enviar</small>«${msg()}»`; $("#wa").href=WA+encodeURIComponent(msg()); }
+async function copyText(t){
+  try{await navigator.clipboard.writeText(t);toast("Mensaje copiado")}
+  catch(e){const a=document.createElement("textarea");a.value=t;document.body.appendChild(a);a.select();try{document.execCommand("copy");toast("Mensaje copiado")}catch(_){toast("No se pudo copiar")}a.remove()}
+}
+
+
+/* familia */
+const KIND={kid:{l:"Niño o niña",every:6},adult:{l:"Adulto",every:12},care:{l:"Prótesis o encías delicadas",every:6}};
+let fam=[];
+try{fam=JSON.parse(localStorage.getItem("fornieles-familia")||"[]")||[]}catch(e){fam=[]}
+const save=()=>{try{localStorage.setItem("fornieles-familia",JSON.stringify(fam))}catch(e){}};
+function status(p){
+  const k=KIND[p.k];
+  if(p.l>=99) return {due:true,txt:"Mejor pedir revisión ya"};
+  const left=k.every-p.l;
+  if(left<=0) return {due:true,txt:left<=-6?`Le toca desde hace más de ${Math.floor(-left/6)*6} meses`:"Le toca ya"};
+  return {due:false,txt:left===1?"Le toca el mes que viene":`Le toca en unos ${left} meses`};
+}
+function renderFam(){
+  const ul=$("#people"); ul.innerHTML="";
+  if(!fam.length){ul.innerHTML='<li class="empty">Aún no has añadido a nadie. Empieza por ti.</li>';$("#famscript").hidden=true;$("#famcta").hidden=true;return}
+  fam.forEach((p,i)=>{
+    const s=status(p), li=document.createElement("li"); li.className="person";
+    li.innerHTML=`<div><div class="nm">${esc(p.n)}<span class="badge ${s.due?"due":"ok"}">${s.due?"Ya":"Al día"}</span></div><div class="st">${KIND[p.k].l} · ${s.txt}</div></div>`;
+    const b=document.createElement("button"); b.type="button"; b.className="rm"; b.setAttribute("aria-label","Quitar a "+p.n); b.textContent="×";
+    b.onclick=()=>{fam.splice(i,1);save();renderFam()}; li.appendChild(b); ul.appendChild(li);
+  });
+  const due=fam.filter(p=>status(p).due).map(p=>p.n);
+  const fs=$("#famscript"), fc=$("#famcta");
+  if(due.length){
+    fs.hidden=false; fc.hidden=false;
+    fs.innerHTML=`<small>Tu mensaje, listo para enviar</small>«${famMsg(due)}»`;
+    $("#famwa").href=WA+encodeURIComponent(famMsg(due));
+  }else{
+    fs.hidden=false; fc.hidden=true;
+    fs.innerHTML=`<small>Todo en orden</small>Nadie de la lista va con retraso. Vuelve a mirarlo en unos meses: la lista se queda guardada en este móvil.`;
+  }
+}
+function famMsg(d){ return d.length===1?`Hola, quería pedir cita de revisión para ${d[0]}.`:`Hola, quería pedir cita de revisión para ${d.length} personas: ${joinEs(d).replace(/ o ([^,]+)$/," y $1")}. Si puede ser, seguidas el mismo día.`; }
+function esc(s){return s.replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]))}
+$("#famform").onsubmit=e=>{
+  e.preventDefault();
+  const n=$("#fn").value.trim()||("Persona "+(fam.length+1));
+  fam.push({n,k:$("#fk").value,l:+$("#fl").value}); save(); renderFam();
+  $("#fn").value=""; $("#fn").focus();
+};
+
+
+/* inicio */
+const h=location.hash.slice(1); const f=T.find(t=>t.id===h); if(f) cur=f;
+renderList(); renderPlan(); renderChips(); renderScript(); renderFam();
+if(f) setTimeout(()=>$("#tratamiento").scrollIntoView(),50);
+</script>
+</body>
+</html>
